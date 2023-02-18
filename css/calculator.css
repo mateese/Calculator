@@ -111,15 +111,23 @@ p {
 }
 
 .tabs__content {
-    padding: 30px 0px;
-    background: #F5FAFE;
     box-shadow: 8px 8px 26px #e5eaee, -8px -8px 37px rgba(255, 255, 255, 0.342);
     border-radius: 0px 0px 10px 10px; 
     color: #000;
 }
 
 .tabs__item {
+    padding: 30px 10px;
     display: none;
+}
+.tabs__item-one {
+    background-color: #fd2c3625;
+}
+.tabs__item-two {
+    background-color: #8eea976f;
+}
+.tabs__item-three {
+    background-color: #fbb01b34;
 }
 
 .tabs__item.active {
@@ -193,7 +201,7 @@ p {
 }
 .ac {
     grid-area: ac;
-    width: 100%;
+    width: 92%;
 }
 
 .btn:hover {
@@ -244,17 +252,31 @@ p {
     }
     .ac {
         grid-area: ac;
-        width: 100%;
+        width: 92%;
     }
 }
-@media (max-width: 395px) {
+@media (max-width: 400px) {
     .calculator {
-        width: 270px;
-        height: 380px;
+        width: 290px;
+        height: 400px;
         padding: 20px 15px;
     }
     .calculator__value {
         font-size: 28px;
+    }
+    .btn {
+        width: 55px;
+        height: 55px;
+    }
+    .ac {
+        grid-area: ac;
+        width: 95%;
+    }
+}
+@media (max-width: 400px) {
+    .calculator {
+        width: 260px;
+        height: 380px;
     }
     .btn {
         width: 50px;
@@ -262,6 +284,6 @@ p {
     }
     .ac {
         grid-area: ac;
-        width: 100%;
+        width: 95%;
     }
 }

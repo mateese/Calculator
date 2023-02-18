@@ -2,7 +2,6 @@ const screen = document.querySelector('.calculator__value');
 const buttons = document.querySelectorAll('.btn');
 
 buttons.forEach((item) => {
-    console.log(item.id)
     item.onclick = () => {
         if (item.id == 'ac') {
             screen.innerText = '';
