@@ -119,6 +119,7 @@ p {
 .tabs__item {
     padding: 30px 10px;
     display: none;
+    border-radius: 0px 0px 10px 10px; 
 }
 .tabs__item-one {
     background-color: #fd2c3625;
