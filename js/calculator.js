@@ -11,7 +11,7 @@ buttons.forEach((item) => {
         } else if (screen.innerText != '' && item.id == 'equal') {
             screen.innerText = eval(screen.innerText);
         } else if (screen.innerText == '' && item.id == 'equal') {
-            screen.innerText = 'Empty!';
+            screen.innerText = '0';
             setTimeout(() => (screen.innerText = ''), 2000);
         } else {
             screen.innerText += item.id;

@@ -84,12 +84,14 @@ p {
 }
 .tabs__nav-btn {
     padding: 15px 30px;
-    color: #000;
+    color: #4b8edb;
     font-size: 20px;
     width: 100%;
     background: #D9EAFE;
     cursor: pointer;
+    white-space: nowrap;
 }
+
 @media (max-width: 460px) {
     .tabs__nav-btn {
         overflow: hidden;
@@ -106,20 +108,27 @@ p {
 }
 
 .tabs__nav-btn.active {
-    background:#0076FF;
-    color: #fff;
+    color: #4b8edb;
 }
-
+.tabs__nav-btn-one.active {
+    background-color: #fd2c3625;
+}
+.tabs__nav-btn-two.active {
+    background-color: #8eea976f;
+}
+.tabs__nav-btn-three.active {
+    background-color: #fbb01b34;
+}
 .tabs__content {
-    box-shadow: 8px 8px 26px #e5eaee, -8px -8px 37px rgba(255, 255, 255, 0.342);
     border-radius: 0px 0px 10px 10px; 
-    color: #000;
+    color: #2B2E41;
 }
 
 .tabs__item {
     padding: 30px 10px;
     display: none;
     border-radius: 0px 0px 10px 10px; 
+    /* white-space: wrap; */
 }
 .tabs__item-one {
     background-color: #fd2c3625;
@@ -254,6 +263,11 @@ p {
     .ac {
         grid-area: ac;
         width: 92%;
+    }
+    .tabs__nav-btn {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 }
 @media (max-width: 400px) {
